@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     ssr: false,
     target: 'static',
     // TS　Strict type checks
+    // console=> npx nuxi typecheck
     typescript: {
         strict: true
     }
