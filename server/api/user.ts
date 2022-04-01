@@ -27,6 +27,6 @@ export type Company = {
 };
 
 export default async (req: IncomingMessage, res: ServerResponse) => {
-    const result: User[] = await $fetch('https://jsonplaceholder.typicode.com/users')
+    const result: User[] = await $fetch('https://jsonplaceholder.typicode.com/users');
     return result
 }

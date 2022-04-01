@@ -1,4 +1,7 @@
 <script setup lang="ts">
+// import useCounter from "~~/composables/count";
+
+const { count, increment, decrement } = useCounter();
 useMeta({
     meta: [{
         name: "description"
@@ -7,18 +10,8 @@ useMeta({
 })
 
 const title = "Hello Nuxt3!!"
-interface Users {
-    id: string;
-    username: string;
-    email: string;
-}
-
 const { data: users }: any = await useFetch("/api/users");
 </script>
-
-
-
-
 
 <template>
     <Html lang="ja">
@@ -33,6 +26,10 @@ const { data: users }: any = await useFetch("/api/users");
     <ul>
         <li v-for="user in users" :key="user.id">{{ user.username }}. ......{{ user.email }}</li>
     </ul>
+    <br />
+    <h2>{{ count }}</h2>
+    <button @click="increment">+</button>
+    <button @click="decrement">-</button>
 </template>
 
 

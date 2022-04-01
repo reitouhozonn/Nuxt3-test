@@ -8,6 +8,21 @@ export default defineNuxtConfig({
     // TS　Strict type checks
     // console=> npx nuxi typecheck
     typescript: {
-        strict: true
+        strict: false
     }
 })
+
+// meta: {
+//     htmlAttrs: {
+//         lang: 'ja',
+//             // 'data-theme': "cupcake"
+//     },
+//     title: "Nuxt3 Test",
+//         meta: [
+//             { charset: "utf8" },
+//             { name: 'viewport', content: "width=device-width, initial-scale=1" }
+//         ],
+//             link: [
+//                 { ref: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+//             ]
+// },
