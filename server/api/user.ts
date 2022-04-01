@@ -1,6 +1,6 @@
 import type { IncomingMessage, ServerResponse } from "http";
 
-export interface User {
+export type User = {
     id: string;
     name: string;
     username: string;
@@ -8,23 +8,23 @@ export interface User {
     address: Address;
     phone: string;
     company: Company;
-}
-export interface Address {
+};
+export type Address = {
     street: string;
     suite: string;
     city: string;
     zipcode: string;
     geo: Geo;
-}
-export interface Geo {
+};
+export type Geo = {
     lat: string;
     lng: string;
-}
-export interface Company {
+};
+export type Company = {
     name: string;
     catchPhrase: string;
     bs: string;
-}
+};
 
 export default async (req: IncomingMessage, res: ServerResponse) => {
     const result: User[] = await $fetch('https://jsonplaceholder.typicode.com/users')

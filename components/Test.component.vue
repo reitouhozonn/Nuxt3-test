@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 useMeta({
     meta: [{
         name: "description"
@@ -8,7 +7,11 @@ useMeta({
 })
 
 const title = "Hello Nuxt3!!"
-
+interface Users {
+    id: string;
+    username: string;
+    email: string;
+}
 
 const { data: users }: any = await useFetch("/api/users");
 </script>
