@@ -9,7 +9,10 @@ export default defineNuxtConfig({
     // console=> npx nuxi typecheck
     typescript: {
         strict: false
-    }
+    },
+    modules: [
+        '@nuxt/ui'
+    ]
 })
 
 module.exports = {
@@ -30,18 +33,18 @@ module.exports = {
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         ]
     },
+    meta: {
+        htmlAttrs: {
+            lang: 'ja',
+            // 'data-theme': "cupcake"
+        },
+        title: "Nuxt3 Test",
+        meta: [
+            { charset: "utf8" },
+            { name: 'viewport', content: "width=device-width, initial-scale=1" }
+        ],
+        link: [
+            { ref: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        ]
+    },
 }
-// meta: {
-//     htmlAttrs: {
-//         lang: 'ja',
-//             // 'data-theme': "cupcake"
-//     },
-//     title: "Nuxt3 Test",
-//         meta: [
-//             { charset: "utf8" },
-//             { name: 'viewport', content: "width=device-width, initial-scale=1" }
-//         ],
-//             link: [
-//                 { ref: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-//             ]
-// },

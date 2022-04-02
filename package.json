@@ -6,6 +6,10 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
+    "@nuxt/ui": "npm:@nuxt/ui-edge@latest",
     "nuxt3": "latest"
+  },
+  "dependencies": {
+    "firebase-tools": "^10.5.0"
   }
 }
