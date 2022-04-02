@@ -2,6 +2,7 @@
 // import useCounter from "~~/composables/count";
 
 const { count, increment, decrement } = useCounter();
+const title = "Hello Nuxt3!!";
 useMeta({
     meta: [{
         name: "description"
@@ -9,17 +10,12 @@ useMeta({
     }]
 })
 
-const title = "Hello Nuxt3!!"
 const { data: users }: any = await useFetch("/api/users");
 </script>
 
 <template>
-    <Html lang="ja">
-        <Head>
-            <Title>{{ title }}</Title>
-            <!-- <Meta name="description" :content="'${ title } page'"></Meta> -->
-        </Head>
-    </Html>
+    <Title>{{ title }}</Title>
+    <Meta name="description" :content="'${ title } page'"></Meta>
     <h1>{{ title }}</h1>
 
     <h1>User!</h1>
