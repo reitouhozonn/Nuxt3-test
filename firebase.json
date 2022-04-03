@@ -5,8 +5,7 @@
   },
   "hosting": {
     "site": "testfirebase-1c38f",
-    "public": ".output/sever",
-    "cleanUrls": true,
+    "public": ".output/public",
     "ignore": [
       "firebase.json",
       "**/.*",

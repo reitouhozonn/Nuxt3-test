@@ -9,10 +9,7 @@ export default defineNuxtConfig({
     // console=> npx nuxi typecheck
     typescript: {
         strict: false
-    },
-    modules: [
-        '@nuxt/ui'
-    ]
+    }
 })
 
 module.exports = {
