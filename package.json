@@ -10,6 +10,7 @@
     "nuxt3": "latest"
   },
   "dependencies": {
+    "firebase": "^9.6.10",
     "firebase-tools": "^10.5.0"
   }
 }
