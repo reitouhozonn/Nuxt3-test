@@ -8,3 +8,4 @@ nuxt.d.ts
 .gitignore
 nuxt.config.ts
 firebaserc.*
+public

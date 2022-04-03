@@ -4,17 +4,19 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
-    "public": ".output/server/index.mjs",
+    "site": "testfirebase-1c38f",
+    "public": ".output/sever",
+    "cleanUrls": true,
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
     ]
+  },
+  "emulators": {
+    "hosting": {
+      "port": 3000,
+      "host": "0.0.0.0"
+    }
   }
 }
