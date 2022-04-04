@@ -1,27 +1,27 @@
-import {
-    getFirestore,
-    collection,
-    query,
-    where,
-    getDocs,
-} from 'firebase/firestore';
+// import {
+//     getFirestore,
+//     collection,
+//     query,
+//     where,
+//     getDocs,
+// } from 'firebase/firestore';
 
-import { firebaseInit } from './firebaseInit';
+// import { firebaseInit } from './firebaseInit';
 
-export const useFirestore = () => {
-    const db = getFirestore(firebaseInit());
+// export const useFirestore = () => {
+//     const db = getFirestore(firebaseInit());
 
-    const GetArticles = async () => {
-        const q = query(
-            collection(db, 'articles'),
-        );
-        const querySnapshot = await getDocs(q);
+//     const GetArticles = async () => {
+//         const q = query(
+//             collection(db, 'articles'),
+//         );
+//         const querySnapshot = await getDocs(q);
 
-        querySnapshot.forEach((doc) => {
-            console.log(doc.data());
-        });
-    };
-    return {
-        GetArticles,
-    };
-};
+//         querySnapshot.forEach((doc) => {
+//             console.log(doc.data());
+//         });
+//     };
+//     return {
+//         GetArticles,
+//     };
+// };
